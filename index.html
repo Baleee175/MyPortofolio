@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iqbal Julyansyah | Web Developer & Data Analyst</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container nav-wrapper">
+    <div class="logo">PORTOFOLIO</div>
+    <nav class="nav-menu">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</header>
+
+<section id="home" class="hero">
+  <div class="container hero-content">
+    <div class="hero-text">
+      <h1>Hi, I'm Iqbal Julyansyah</h1>
+      <h2>Web Developer & Data Analyst</h2>
+      <p>Informatics Engineering student at Pamulang University focused on building modern web applications and leveraging data analysis to drive actionable insights.</p>
+    <div class="hero-action">
+      <a href="#projects" class="btn primary">View Projects</a>
+      <a href="#contact" class="btn outline">Contact Me</a>
+    </div>
+    </div>
+    <div class="hero-image">
+      <img src="img/pas foto.jpeg" alt="Profile Photo" />
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="container">
+    <div class="about-card">
+      <h2 class="section-title">About Me</h2>
+      <p class="about-text">
+        Informatics Engineering student at Pamulang University with a focus on Web Development and Data Analysis. Experienced in database management, data entry,
+        and validation, as well as transforming raw data into structured reports to support decision-making. Adept at developing functional websites, creating digital
+        content, and producing visual designs for organizational needs. Possesses strong analytical, project management, and team collaboration skills, delivering tangible 
+        outputs such as internal web systems, managed databases, and digital publication content that enhance operational efficiency
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="section bg-light">
+  <div class="container">
+    <h2 class="section-title">Skills & Tools</h2>
+    <p class="section-desc">
+      Comprehensive technical expertise and software proficiency used to drive productivity and digital solution development. I combine mastery of modern programming languages 
+      with data analysis tools to transform business logic into efficient, functional systems. My entire workflow is supported by professional collaboration tools and version 
+      control to ensure data security and the accuracy of the final output for every project.
+    </p>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-icon">
+          <img src="https://cdn-icons-png.flaticon.com/512/2210/2210153.png" alt="Web Dev Icon">
+        </div>
+        <h3>Web Development</h3>
+        <p>Building responsive websites with clean code structures and modern industry standards.</p>
+        <div class="skill-tags">
+          <span>HTML5</span>
+          <span>CSS3</span>
+          <span>JavaScript</span>
+          <span>PHP</span>
+          <span>MySQL</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <img src="https://cdn-icons-png.flaticon.com/512/424/424231.png" alt="Data Icon">
+        </div>
+        <h3>Data Analyst</h3>
+        <p>Processing raw datasets into meaningful visualizations that drive data-driven decision-making.</p>
+        <div class="skill-tags">
+          <span>Excel Pivot</span>
+          <span>Data Visualization</span>
+          <span>Reporting</span>
+          <span>Google Sheets</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <img src="https://cdn-icons-png.flaticon.com/512/8061/8061614.png" alt="Tools Icon">
+        </div>
+        <h3>Tools & Productivity</h3>
+        <p>Proficient in productivity software for professional collaboration and document management.</p>
+        <div class="skill-tags">
+          <span>MS Office</span>
+          <span>PowerPoint</span>
+          <span>VS Code</span>
+          <span>Git</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <div class="container">
+    <h2 class="section-title">Featured Projects</h2>
+    <p class="section-desc">
+      A collection of technical implementations across various academic case studies,
+      ranging from information management to digital image processing. Each project is
+      designed to solve specific problems through efficient algorithmic approaches and
+      structured database architectures. My primary focus is on integrating system
+      functionality with intuitive user experiences to deliver practical digital solutions.
+    </p>
+
+    <div class="project-grid">
+      <!-- Project 1 -->
+      <div class="project-card" onclick="openProject('https://apotek-sim.lovestoblog.com')">
+        <div class="project-img-wrapper">
+          <img src="project/apotek.png" alt="Sistem Informasi Apotek">
+          <div class="project-badge">SIM</div>
+        </div>
+        <div class="project-content">
+        <h3>Pharmacy Management Information System</h3>
+          <p>
+            Implementation of a Management Information System (MIS) to enhance pharmacy
+            operational efficiency through automated stock monitoring and periodic sales reporting.
+          </p>
+          <div class="project-tech-tags">
+            <span>Management</span>
+            <span>Database</span>
+          </div>
+        </div>
+      </div>
+      <!-- Project 2 -->
+      <div class="project-card" onclick="openProject('https://kantin-go.infinityfreeapp.com')">
+        <div class="project-img-wrapper">
+          <img src="project/kantingo.png" alt="KantinGO!">
+          <div class="project-badge">Web I</div>
+        </div>
+        <div class="project-content">
+          <h3>KantinGO!</h3>
+          <p>
+            A canteen menu catalog platform for Pamulang University featuring
+            budget-based filtering and favorite menu data management.
+          </p>
+          <div class="project-tech-tags">
+            <span>PHP</span>
+            <span>MySQL</span>
+          </div>
+        </div>
+      </div>
+      <!-- Project 3 -->
+      <div class="project-card" onclick="openProject('https://dapek07.pythonanywhere.com/')">
+        <div class="project-img-wrapper">
+          <img src="project/fractal.png" alt="Image Compressor">
+          <div class="project-badge">PCD</div>
+        </div>
+        <div class="project-content">
+          <h3>Image Compressor (Fractal)</h3>
+          <p>
+            An image compression application utilizing fractal methods
+            (self-similarity) to significantly reduce file size.
+          </p>
+          <div class="project-tech-tags">
+            <span>Algorithms</span>
+            <span>Image Processing</span>
+          </div>
+        </div>
+      </div>
+      <!-- Hidden Project 4 -->
+      <div class="project-card hidden-project"
+          onclick="openProject('https://sistem-pakar-cat.wuaze.com')">
+        <div class="project-img-wrapper">
+          <img src="project/sistempakar.png" alt="Cat Skin Disease Expert System">
+          <div class="project-badge">AI</div>
+        </div>
+        <div class="project-content">
+          <h3>Expert System for Cat Skin Disease Diagnosis</h3>
+          <p>
+            An AI-based expert system for diagnosing cat skin diseases using 
+            forward chaining inference. The system applies rule-based reasoning 
+            to analyze symptoms and provide preliminary diagnostic results.
+          </p>
+          <div class="project-tech-tags">
+            <span>Expert System</span>
+            <span>Rule-Based AI</span>
+            <span>Forward Chaining</span>
+          </div>
+        </div>
+      </div>
+      <!-- Hidden Project 5 -->
+      <div class="project-card hidden-project"
+          onclick="openProject('https://baleee175.github.io/Activity-Planner/')">
+        <div class="project-img-wrapper">
+          <img src="project/activityplan.png" alt="Smart Activity Planner">
+          <div class="project-badge">Activity</div>
+        </div>
+        <div class="project-content">
+          <h3>Smart Activity Planner</h3>
+          <p>
+            A personal productivity web application for recording, organizing,
+            and tracking planned and completed activities. Designed to support
+            daily planning and self-management through structured activity logs.
+          </p>
+          <div class="project-tech-tags">
+            <span>JavaScript</span>
+            <span>Productivity App</span>
+            <span>Web Development</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- Button -->
+    <div class="center-btn-wrapper">
+      <button id="toggleProjects" class="btn secondary">
+        See All Projects
+      </button>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="section bg-light">
+  <div class="container">
+    <h2 class="section-title">Experience & Activities</h2>
+    <p class="section-desc">
+     A professional track record of active contributions across various organizations and result-oriented self-development programs. 
+     I focus on strengthening technical leadership and project management to deliver tangible efficiency in every work environment. 
+     These experiences have shaped my analytical and collaborative mindset in navigating the challenges of a dynamic digital industry.</p>
+    <div class="experience-grid">
+      <div class="experience-card">
+        <div class="exp-badge">January 2025 – January 2026</div>
+        <div class="exp-header">
+          <h3>Project Assistant</h3>
+          <span class="company-name">Student Affairs and Alumni Relations Office</span>
+        </div>
+        <p class="sub-info">Pamulang University | Scholarship and Student Financial Aid Division</p>
+        <p class="exp-desc">
+          Responsible for managing and validating the student scholarship database, ensuring 100% data completeness and accuracy. 
+          I play a key role in analyzing recipient data to support reporting and strategic decision-making processes, while providing graphic design support for the office's internal publications. 
+          These contributions have significantly enhanced administrative efficiency and accelerated the scholarship data verification workflow.
+        </p>
+      </div>
+
+      <div class="experience-card">
+        <div class="exp-badge">May 2024 – May 2025</div>
+        <div class="exp-header">
+          <h3>Web Development Coordinator</h3>
+          <span class="company-name">Informatics Study Club</span>
+        </div>
+        <p class="sub-info">Pamulang University</p>
+        <p class="exp-desc">
+          Spearheaded and coordinated web development activities within the club, ranging from curriculum planning and task delegation to project evaluations. 
+          I mentored members in mastering fundamental to advanced web development concepts through hands-on practical projects. 
+          This role has cultivated my leadership, technical communication, and project management skills within a collaborative team environment.
+        </p>
+      </div>
+
+      <div class="experience-card">
+        <div class="exp-badge">January – December 2024</div>
+        <div class="exp-header">
+          <h3>Participant - NovoClub Batch 3</h3>
+          <span class="company-name">Paragon Corp</span>
+        </div>
+        <p class="sub-info">Self-Development Bootcamp</p>
+        <p class="exp-desc">
+          Participated in a comprehensive self-development bootcamp focused on strengthening soft skills, professional communication, and leadership. 
+          I was selected as the coordinator for the inaugural "Offline Activity" in my designated region, where I took full responsibility for planning, team coordination, and event execution. 
+          This initiative ensured a seamless event flow and significantly increased participant engagement levels.
+        </p>
+      </div>
+
+      <div class="experience-card">
+        <div class="exp-badge">November 2024</div>
+        <div class="exp-header">
+          <h3>Organizing Committee Chairperson</h3>
+          <span class="company-name">Informatics Competition</span>
+        </div>
+        <p class="sub-info">Pamulang University</p>
+        <p class="exp-desc">
+          Held full responsibility for the planning, coordination, and execution of the campus-wide Informatics Competition. 
+          Managed the organizing committee, developed the event concept, and ensured all activities were executed according to schedule. 
+          This experience strengthened my event management, leadership, and decision-making skills in dynamic environments.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="certificates" class="section bg-light">
+  <div class="container">
+    <h2 class="section-title">Certificates</h2>
+
+<div class="certificate-grid" id="certificateGrid">
+      <!-- 3 utama (langsung tampil) -->
+      <div class="certificate-card">
+        <img src="sertifikat/SERTIFIKAT DATA ANALISIS.jpg">
+        <h3>Data Analyst</h3>
+      </div>
+      <div class="certificate-card">
+        <img src="sertifikat/SERTIFIKAT JAVASCRIPT.jpg">
+        <h3>JavaScript</h3>
+      </div>
+      <div class="certificate-card">
+        <img src="sertifikat/SERTIFIKAT MICROSOFT EXCEL.jpg">
+        <h3>Microsoft Excel</h3>
+      </div>
+
+      <!-- Sertifikat tambahan (hidden dulu) -->
+      <div class="certificate-card extra-certificate">
+        <div class="certificate-slider">
+            <div class="slider-wrapper">
+              <img src="sertifikat/SERTIFIKAT MAGANG LKA1.jpg">
+              <img src="sertifikat/SERTIFIKAT MAGANG LKA2.jpg">
+            </div>
+        </div>
+            <h3>Internship</h3>
+      </div>
+      <div class="certificate-card extra-certificate">
+        <div class="certificate-slider">
+            <div class="slider-wrapper">
+              <img src="sertifikat/SERTIFIKAT MAGANG LKA3.jpg">
+              <img src="sertifikat/SERTIFIKAT MAGANG LKA4.jpg">
+            </div>
+        </div>
+            <h3>Internship</h3>
+      </div>
+      <div class="certificate-card extra-certificate">
+        <div class="certificate-slider">
+            <div class="slider-wrapper">
+              <img src="sertifikat/SERTIFIKAT WORKSHOP BIMBINGAN KARIR1.jpg">
+              <img src="sertifikat/SERTIFIKAT WORKSHOP BIMBINGAN KARIR2.jpg">
+            </div>
+        </div>
+            <h3>Career Guidance Workshop</h3>
+      </div>
+      <div class="certificate-card extra-certificate">
+        <img src="sertifikat/SERTIFIKAT SOFTWARE DEVELOPMENT.jpg">
+        <h3>Software Development</h3>
+      </div>
+      <div class="certificate-card extra-certificate">
+        <img src="sertifikat/SERTIFIKAT INFORMATICS COMPETITION.jpg">
+        <h3>Informatics Competition</h3>
+      </div>
+      <div class="certificate-card extra-certificate">
+        <img src="sertifikat/SERTIFIKAT ISC KOORDINATOR WEB DEVELOPMENT.jpg">
+        <h3>Web Development Coordinator</h3>
+      </div>
+      <div class="certificate-card extra-certificate">
+        <img src="sertifikat/SERTIFIKAT WORKSHOP TI.jpg">
+        <h3>Informatics Engineering Workshop</h3>
+      </div>      
+      <div class="certificate-card extra-certificate">
+        <img src="sertifikat/SERTIFIKAT WORKSHOP AI.jpg">
+        <h3>Artificial Intelligence Workshop</h3>
+      </div>        
+      <div class="certificate-card extra-certificate">
+        <img src="sertifikat/SERTIFIKAT DICODING.jpg">
+        <h3>AI Fundamentals Certification Dicoding</h3>
+      </div>
+      <div class="certificate-card extra-certificate">
+        <div class="certificate-slider">
+          <div class="slider-wrapper">
+            <img src="sertifikat/SERTIFIKAT HAK CIPTA1.jpg">
+            <img src="sertifikat/SERTIFIKAT HAK CIPTA2.jpg">
+          </div>
+        </div>
+        <h3>Intellectual Property Right</h3>
+      </div>
+    </div> 
+    <div class="center-btn-wrapper">
+      <button class="btn secondary" id="toggleCertificateBtn">
+        View More
+      </button>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section bg-dark">
+  <div class="container">
+    <div class="contact-card">
+      <h2 class="contact-title">Let's Work Together</h2>
+      <p class="contact-desc">
+        Interested in collaborating or have a project you'd like to discuss? <br>
+        I am always open to new opportunities in Web Development and Data Analysis.
+      </p>
+      
+      <div class="social-icons">
+        <a href="mailto:iqbaleee234@gmail.com" class="icon-link email" title="Email">
+          <img src="img/email.png" alt="Email">
+        </a>
+        <a href="https://wa.me/6287887538850" target="_blank" class="icon-link whatsapp" title="WhatsApp">
+          <img src="img/wa.jpg" alt="WhatsApp">
+        </a>
+        <a href="https://linkedin.com/in/iqbal-julyansyah" target="_blank" class="icon-link linkedin" title="LinkedIn">
+          <img src="img/linkedin.png" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/Baleee175" target="_blank" class="icon-link github" title="Github">
+          <img src="img/github.png" alt="Github">
+        </a>
+      </div>
+
+      <span class="response-time">Response time: Usually within 24 hours</span>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-content">    
+    <div class="footer-copy">
+      <p>&copy; <span id="currentYear"></span> Iqbal Julyansyah. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<button id="backToTop" class="back-to-top" title="Kembali ke Atas">
+  <i class="fas fa-arrow-up"></i> ↑
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
