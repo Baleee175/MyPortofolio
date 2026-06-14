@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iqbal Julyansyah | Web Developer & Data Analyst</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container nav-wrapper">
+    <div class="logo">PORTOFOLIO</div>
+    <nav class="nav-menu">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</header>
+
+<section id="home" class="hero">
+  <canvas id="hero-canvas"></canvas>
+  <div class="container hero-content">
+    <div class="hero-text">
+      <div class="hero-tag">Available for work</div>
+      <h1>Hi, I'm <span>Iqbal</span><br>Julyansyah</h1>
+      <h2>Web Developer & Data Analyst</h2>
+      <p>Informatics Engineering student at Pamulang University focused on building modern web applications and leveraging data analysis to drive actionable insights.</p>
+      <div class="hero-action">
+        <a href="#projects" class="btn primary">View Projects</a>
+        <a href="#contact" class="btn outline">Contact Me</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="img/pas foto.jpeg" alt="Profile Photo" />
+    </div>
+  </div>
+  <div class="scroll-hint">SCROLL</div>
+</section>
+
+<section id="about" class="section">
+  <div class="container">
+    <div class="about-card reveal">
+      <h2 class="section-title">About Me</h2>
+      <p class="about-text">
+        Informatics Engineering student at Pamulang University with a focus on Web Development and Data Analysis. Experienced in database management, data entry,
+        and validation, as well as transforming raw data into structured reports to support decision-making. Adept at developing functional websites, creating digital
+        content, and producing visual designs for organizational needs. Possesses strong analytical, project management, and team collaboration skills, delivering tangible 
+        outputs such as internal web systems, managed databases, and digital publication content that enhance operational efficiency.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="section bg-light">
+  <div class="container">
+    <h2 class="section-title reveal">Skills & Tools</h2>
+    <p class="section-desc reveal">
+      Comprehensive technical expertise and software proficiency used to drive productivity and digital solution development.
+    </p>
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <div class="skill-icon">
+          <img src="https://cdn-icons-png.flaticon.com/512/2210/2210153.png" alt="Web Dev Icon">
+        </div>
+        <h3>Web Development</h3>
+        <p>Building responsive websites with clean code structures and modern industry standards.</p>
+        <div class="skill-tags">
+          <span>HTML5</span>
+          <span>CSS3</span>
+          <span>JavaScript</span>
+          <span>PHP</span>
+          <span>MySQL</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-icon">
+          <img src="https://cdn-icons-png.flaticon.com/512/424/424231.png" alt="Data Icon">
+        </div>
+        <h3>Data Analyst</h3>
+        <p>Processing raw datasets into meaningful visualizations that drive data-driven decision-making.</p>
+        <div class="skill-tags">
+          <span>Excel Pivot</span>
+          <span>Data Visualization</span>
+          <span>Reporting</span>
+          <span>Google Sheets</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-icon">
+          <img src="https://cdn-icons-png.flaticon.com/512/8061/8061614.png" alt="Tools Icon">
+        </div>
+        <h3>Tools & Productivity</h3>
+        <p>Proficient in productivity software for professional collaboration and document management.</p>
+        <div class="skill-tags">
+          <span>MS Office</span>
+          <span>PowerPoint</span>
+          <span>VS Code</span>
+          <span>Git</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <div class="container">
+    <h2 class="section-title reveal">Featured Projects</h2>
+    <p class="section-desc reveal">
+      A collection of technical implementations across various academic case studies,
+      ranging from information management to productivity applications.
+    </p>
+
+    <div class="project-grid">
+
+      <div class="project-card reveal" onclick="openProject('https://lldunpam.my.id/')">
+        <div class="project-img-wrapper">
+          <img src="project/lld-unpam.png" alt="LLD UNPAM">
+          <div class="project-badge">LARAVEL</div>
+        </div>
+        <div class="project-content">
+          <h3>Lembaga Layanan Disabilitas UNPAM</h3>
+          <p>Official website and information system of the Lembaga Layanan Disabilitas Universitas Pamulang featuring company profile, CMS, academic monitoring, reports, and disability service information.</p>
+          <div class="project-tech-tags">
+            <span>Laravel</span>
+            <span>PHP</span>
+            <span>MySQL</span>
+            <span>CMS</span>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="project-card reveal" onclick="openProject('https://tpqbaitulquransindangjaya.my.id/')">
+        <div class="project-img-wrapper">
+          <img src="project/tpq-baitul-quran.png" alt="TPQ Baitul Qur'an Website">
+          <div class="project-badge">PHP</div>
+        </div>
+        <div class="project-content">
+          <h3>TPQ Baitul Qur'an Sindang Jaya</h3>
+          <p>A digital TPQ service website featuring online student registration, SPP payment checking, donation services, and an admin dashboard for structured data management.</p>
+          <div class="project-tech-tags">
+            <span>PHP</span>
+            <span>MySQL</span>
+            <span>Bootstrap</span>
+            <span>Admin Panel</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal" onclick="openProject('https://order.ruangpulang.app/')">
+        <div class="project-img-wrapper">
+          <img src="project/ruangpulang.png" alt="Kedai Ruang Pulang">
+          <div class="project-badge">NEXT.JS</div>
+        </div>
+        <div class="project-content">
+          <h3>Kedai Ruang Pulang</h3>
+          <p>A modern web-based ordering and management system designed to improve customer ordering experiences and streamline digital restaurant operations.</p>
+          <div class="project-tech-tags">
+            <span>Next.js</span>
+            <span>Web App</span>
+            <span>Management</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal" onclick="openProject('https://kantingo.lovestoblog.com')">
+        <div class="project-img-wrapper">
+          <img src="project/kantingo.png" alt="KantinGO!">
+          <div class="project-badge">WEB</div>
+        </div>
+        <div class="project-content">
+          <h3>KantinGO!</h3>
+          <p>A canteen menu catalog platform for Pamulang University featuring budget-based filtering and favorite menu data management.</p>
+          <div class="project-tech-tags">
+            <span>PHP</span>
+            <span>MySQL</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal" onclick="openProject('https://SIMApotek.infinityfreeapp.com')">
+        <div class="project-img-wrapper">
+          <img src="project/apotek.png" alt="Sistem Informasi Apotek">
+          <div class="project-badge">SIM</div>
+        </div>
+        <div class="project-content">
+          <h3>Pharmacy Management System</h3>
+          <p>Implementation of a Management Information System (MIS) to enhance pharmacy operational efficiency through automated stock monitoring and reporting.</p>
+          <div class="project-tech-tags">
+            <span>Management</span>
+            <span>Database</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal" onclick="openProject('https://sistempakarcat.wuaze.com')">
+        <div class="project-img-wrapper">
+          <img src="project/sistempakar.png" alt="Cat Skin Disease Expert System">
+          <div class="project-badge">AI</div>
+        </div>
+        <div class="project-content">
+          <h3>Expert System — Cat Skin Disease</h3>
+          <p>An AI-based expert system for diagnosing cat skin diseases using forward chaining inference with rule-based reasoning to analyze symptoms.</p>
+          <div class="project-tech-tags">
+            <span>Expert System</span>
+            <span>Rule-Based AI</span>
+            <span>Forward Chaining</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal" onclick="openProject('https://baleee175.github.io/Activity-Planner/')">
+        <div class="project-img-wrapper">
+          <img src="project/activityplan.png" alt="Smart Activity Planner">
+          <div class="project-badge">APP</div>
+        </div>
+        <div class="project-content">
+          <h3>Smart Activity Planner</h3>
+          <p>A personal productivity web application for recording, organizing, and tracking planned and completed activities with structured activity logs.</p>
+          <div class="project-tech-tags">
+            <span>JavaScript</span>
+            <span>Productivity</span>
+            <span>Web Dev</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="section bg-light">
+  <div class="container">
+    <h2 class="section-title reveal">Experience & Activities</h2>
+    <p class="section-desc reveal">
+      A professional track record of active contributions across organizations, leadership roles, and result-oriented self-development programs.
+    </p>
+
+    <div class="experience-grid">
+
+      <div class="experience-card reveal">
+        <div class="exp-badge">March 2026 – Present</div>
+        <div class="exp-header">
+          <h3>Web Developer</h3>
+          <span class="company-name">// Disability Services Center</span>
+        </div>
+        <p class="sub-info">Pamulang University</p>
+        <p class="exp-desc">Developed and maintained the official website for the Disability Services Center to optimize administrative workflows and improve data accessibility. Built an integrated database system that streamlined data validation and reporting processes, significantly reducing manual administrative workloads. Implemented automated report export features that accelerated document generation and improved institutional data management efficiency.</p>
+      </div>
+
+      <div class="experience-card reveal">
+        <div class="exp-badge">March 2026 – Present</div>
+        <div class="exp-header">
+          <h3>Campus Ambassador</h3>
+          <span class="company-name">// Pop Survey by Populix</span>
+        </div>
+        <p class="sub-info">Research & Student Outreach Program</p>
+        <p class="exp-desc">Promoted the Pop Survey platform to university students through referral campaigns, educational outreach, and digital broadcasting strategies. Successfully contributed to increasing platform awareness and attracting new registered users by leveraging targeted student engagement approaches. Enhanced communication, campaign management, and community engagement capabilities.</p>
+      </div>
+
+      <div class="experience-card reveal">
+        <div class="exp-badge">February 2026 – Present</div>
+        <div class="exp-header">
+          <h3>Campus Ambassador</h3>
+          <span class="company-name">// MySkill.id</span>
+        </div>
+        <p class="sub-info">Digital Campaign & Student Engagement</p>
+        <p class="exp-desc">Promoted digital learning and career development programs through creative social media campaigns and educational content strategies. Produced engaging short-form content for platforms such as Instagram Reels and TikTok, contributing to increased audience engagement and brand awareness among university students.</p>
+      </div>
+
+      <div class="experience-card reveal">
+        <div class="exp-badge">January 2025 – January 2026</div>
+        <div class="exp-header">
+          <h3>Project Assistant</h3>
+          <span class="company-name">// Student Affairs & Alumni Relations Office</span>
+        </div>
+        <p class="sub-info">Pamulang University | Scholarship & Student Financial Aid Division</p>
+        <p class="exp-desc">Managed and validated the student scholarship database while ensuring data completeness and accuracy for administrative reporting. Contributed to recipient data analysis to support strategic decision-making processes and created visual publication materials for internal communications.</p>
+      </div>
+
+      <div class="experience-card reveal">
+        <div class="exp-badge">May 2024 – May 2025</div>
+        <div class="exp-header">
+          <h3>Web Development Coordinator</h3>
+          <span class="company-name">// Informatics Study Club</span>
+        </div>
+        <p class="sub-info">Pamulang University</p>
+        <p class="exp-desc">Spearheaded and coordinated web development activities within the organization, including curriculum planning, task delegation, and project evaluation. Mentored members in mastering web development concepts through collaborative hands-on projects and practical implementation.</p>
+      </div>
+
+      <div class="experience-card reveal">
+        <div class="exp-badge">January 2024 – December 2024</div>
+        <div class="exp-header">
+          <h3>Participant — NovoClub Batch 3</h3>
+          <span class="company-name">// Paragon Corp</span>
+        </div>
+        <p class="sub-info">Self-Development Bootcamp</p>
+        <p class="exp-desc">Participated in an intensive self-development bootcamp focused on leadership, communication, and professional growth. Selected as the coordinator for the inaugural regional Offline Activity, where I managed planning, team coordination, and event execution.</p>
+      </div>
+
+      <div class="experience-card reveal">
+        <div class="exp-badge">November 2024</div>
+        <div class="exp-header">
+          <h3>Organizing Committee Chairperson</h3>
+          <span class="company-name">// Informatics Competition</span>
+        </div>
+        <p class="sub-info">Pamulang University</p>
+        <p class="exp-desc">Led the planning, coordination, and execution of a campus-wide Informatics Competition event. Managed the organizing committee, supervised event operations, and ensured all activities were executed according to schedule and objectives.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="certificates" class="section bg-light">
+  <div class="container">
+    <h2 class="section-title reveal">Certificates</h2>
+
+    <div class="certificate-grid" id="certificateGrid">
+      <div class="certificate-card reveal">
+        <img src="sertifikat/SERTIFIKAT WEB DEVELOPMENT.png">
+        <h3>Web Development</h3>
+      </div>
+      <div class="certificate-card reveal">
+        <img src="sertifikat/SERTIFIKAT DATA ANALYSIS.png">
+        <h3>Data Analysis</h3>
+      </div>
+      <div class="certificate-card reveal">
+        <img src="sertifikat/SERTIFIKAT MICROSOFT EXCEL.png">
+        <h3>Microsoft Excel</h3>
+      </div>
+
+      <div class="certificate-card extra-certificate">
+        <div class="certificate-slider">
+          <div class="slider-wrapper">
+            <img src="sertifikat/SERTIFIKAT MAGANG LKA1.jpg">
+            <img src="sertifikat/SERTIFIKAT MAGANG LKA2.jpg">
+          </div>
+        </div>
+        <h3>Internship</h3>
+      </div>
+      <div class="certificate-card extra-certificate">
+        <div class="certificate-slider">
+          <div class="slider-wrapper">
+            <img src="sertifikat/SERTIFIKAT MAGANG LKA3.jpg">
+            <img src="sertifikat/SERTIFIKAT MAGANG LKA4.jpg">
+          </div>
+        </div>
+        <h3>Internship</h3>
+      </div>
+      <div class="certificate-card extra-certificate">
+        <div class="certificate-slider">
+          <div class="slider-wrapper">
+            <img src="sertifikat/SERTIFIKAT WORKSHOP BIMBINGAN KARIR1.jpg">
+            <img src="sertifikat/SERTIFIKAT WORKSHOP BIMBINGAN KARIR2.jpg">
+          </div>
+        </div>
+        <h3>Career Guidance Workshop</h3>
+      </div>
+      <div class="certificate-card extra-certificate">
+        <img src="sertifikat/SERTIFIKAT SOFTWARE DEVELOPMENT.jpg">
+        <h3>Software Development</h3>
+      </div>
+      <div class="certificate-card extra-certificate">
+        <img src="sertifikat/SERTIFIKAT INFORMATICS COMPETITION.jpg">
+        <h3>Informatics Competition</h3>
+      </div>
+      <div class="certificate-card extra-certificate">
+        <img src="sertifikat/SERTIFIKAT ISC KOORDINATOR WEB DEVELOPMENT.jpg">
+        <h3>Web Development Coordinator</h3>
+      </div>
+      <div class="certificate-card extra-certificate">
+        <img src="sertifikat/SERTIFIKAT WORKSHOP TI.jpg">
+        <h3>Informatics Engineering Workshop</h3>
+      </div>
+      <div class="certificate-card extra-certificate">
+        <img src="sertifikat/SERTIFIKAT WORKSHOP AI.jpg">
+        <h3>Artificial Intelligence Workshop</h3>
+      </div>
+      <div class="certificate-card extra-certificate">
+        <img src="sertifikat/SERTIFIKAT DICODING.jpg">
+        <h3>AI Fundamentals — Dicoding</h3>
+      </div>
+      <div class="certificate-card extra-certificate">
+        <div class="certificate-slider">
+          <div class="slider-wrapper">
+            <img src="sertifikat/SERTIFIKAT HAK CIPTA1.jpg">
+            <img src="sertifikat/SERTIFIKAT HAK CIPTA2.jpg">
+          </div>
+        </div>
+        <h3>Intellectual Property Right</h3>
+      </div>
+    </div>
+
+    <div class="center-btn-wrapper">
+      <button class="btn secondary" id="toggleCertificateBtn">
+        ↓ View More
+      </button>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section bg-dark">
+  <div class="container">
+    <div class="contact-card reveal">
+      <h2 class="contact-title">Let's <span>Work</span><br>Together</h2>
+      <p class="contact-desc">
+        Interested in collaborating or have a project you'd like to discuss?<br>
+        I am always open to new opportunities in Web Development and Data Analysis.
+      </p>
+      
+      <div class="social-icons">
+        <a href="mailto:iqbaleee234@gmail.com" class="icon-link email" title="Email">
+          <img src="img/email.png" alt="Email">
+        </a>
+        <a href="https://wa.me/6287887538850" target="_blank" class="icon-link whatsapp" title="WhatsApp">
+          <img src="img/wa.jpg" alt="WhatsApp">
+        </a>
+        <a href="https://linkedin.com/in/iqbal-julyansyah" target="_blank" class="icon-link linkedin" title="LinkedIn">
+          <img src="img/linkedin.png" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/Baleee175" target="_blank" class="icon-link github" title="Github">
+          <img src="img/github.png" alt="Github">
+        </a>
+      </div>
+
+      <span class="response-time">Usually responds within 24 hours</span>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-content">    
+    <div class="footer-copy">
+      <p>&copy; <span id="currentYear"></span> Iqbal Julyansyah — All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<button id="backToTop" class="back-to-top" title="Back to Top">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
